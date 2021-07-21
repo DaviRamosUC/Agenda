@@ -15,8 +15,8 @@
 </h4>
 
 <!--ts-->
-   * [Objetivo](#objetivo)
-   * [Componentes](#componentes)
+   * [Objetivo](#Objetivo)
+   * [Tech/Lib's](#Tech/Lib's)
    * [Como Usar](#como-usar)
 <!--te-->
 
@@ -28,7 +28,7 @@
 
 ---
 
-## Componentes exploradas com este projeto
+## Tech/Lib's
 * Express
 * Bootstrap
 * Ejs
