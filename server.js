@@ -25,7 +25,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 
 //Lib que envia uma mensagem instantânea e depois se some, usa seção como base;
-const flashMessage = require("connect-flash");
+const flash = require("connect-flash");
 
 //Utilizar sistema de rotas
 const routes = require("./routes");
@@ -47,7 +47,7 @@ const {
 } = require("./src/middlewares/middleware");
 
 // Começa usando a lib do helmet
-app.use(helmet());
+// app.use(helmet());
 
 //Permite utilizar as var dos RESTFULL, ex: req.body || res.send
 app.use(express.urlencoded({ extended: true }));
@@ -70,7 +70,7 @@ const sessionOptions = session({
 });
 
 app.use(sessionOptions);
-app.use(flashMessage());
+app.use(flash());
 
 app.set("views", path.resolve(__dirname, "src", "views")); //Indicando a pasta views com os HTML's
 app.set("view engine", "ejs"); //renderizador do HTML -> tem que dar um "npm i ejs"
