@@ -8,8 +8,11 @@
                     <h1 class="text-center">Contatos</h1>
                     <p class="text-center lead">Crie ou edite seu contato abaixo:</p>
                     <%- include('includes/messages') %>
-
-                        <form action="/contato/register" method="POST">
+                        <% if(contato._id){%> 
+                            <form action="/contato/edit/<%= contato.id %> " method="POST">
+                            <% } else {%>                                
+                            <form action="/contato/register/" method="POST">
+                            <% } %>  
                             <input type="hidden" name="_csrf" value=<%=csrfToken %>>
                             <div class="mb-3">
                                 <label class="form-label">Nome</label>
@@ -25,7 +28,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Telefone</label>
-                                <input value="<%= contato.telefone %>" type="tel" class="form-control" name="teleofone">
+                                <input value="<%= contato.telefone %>" type="tel" class="form-control" name="telefone">
                             </div>
                             <button type="submit" class="btn btn-primary">Salvar</button>
                         </form>
