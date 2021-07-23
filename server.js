@@ -9,6 +9,7 @@ mongoose
   .connect(process.env.CONNECTIONSTRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useFindAndModify: false,
   }) //retorna uma promessa
   .then(() => {
     console.log("Conectei a base de dados.");

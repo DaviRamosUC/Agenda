@@ -1,4 +1,6 @@
-//controlador usando sistema de module.exports para repassar funções de POST, GET e etc
-exports.index = (req, res) => {
-  res.render("index");
+const Contato = require("../models/ContatoModel");
+
+exports.index = async (req, res) => {
+  const contatos = await Contato.buscaContatos();
+  res.render("index", { contatos });
 };
