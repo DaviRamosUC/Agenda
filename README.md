@@ -11,25 +11,27 @@
 </p>
 
 <h4 align="center">
-	👨🏽‍💻  Em produção  👨🏽‍💻
+	👨🏽‍💻  Finalizado  👨🏽‍💻
 </h4>
 
 <!--ts-->
    * [Objetivo](#Objetivo)
-   * [Tech/Lib's](#Tech/Lib's)
+   * [Tech/Lib](#Tech/Lib)
    * [Como Usar](#como-usar)
 <!--te-->
 
 ## Objetivo
 
 * Aprender a usar Express
+* Aprender a usar o Google cloud
 * Aprender a conectar o mongoDB com mongoose
 * Treinar JavaScript, Html (.EJS) e Bootstrap
 
 ---
 
-## Tech/Lib's
+## Tech/Lib
 * Express
+* Google Cloud
 * Bootstrap
 * Ejs
 * Html
@@ -42,6 +44,6 @@
 
 ## Como Usar
 
-Para poder visualizar esse projeto basta acessar o link para o Netlify -> <a href="#">Ainda em produção 👨🏽‍💻</a>
+Para poder visualizar esse projeto basta acessar o link para o Netlify -> <a href="http://35.198.56.190/">Clique aqui 👈🏽</a>
 
 ---
